@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission</title>
+  </head>
+  <body
+    style="
+      background-color: rgba(29, 63, 123, 0.914);
+      color: rgb(255, 255, 255);
+    "
+  >
+    <figure>
+      <img src="SSJCOElogo2.png" alt="SSJCOE name and logo" height="200" />
+    </figure>
+    <h1>College Admission Form</h1>
+    <form action="index.html">
+      <h4>Name<sup>*</sup>:</h4>
+      <input type="text" name="Firstname" placeholder="Firstname" />
+      <input type="text" name="Middle" placeholder="Middle" />
+      <input type="text" name="Lastname" placeholder="Lastname" />
+      <h4>Gender<sup>*</sup>:</h4>
+      <input type="radio" name="gender" />Mr.
+      <input type="radio" name="gender" />Ms.
+      <input type="radio" name="gender" />Mrs.
+      <h4>Mobile Number<sup>*</sup>:</h4>
+      <input type="tel" name="mobile" placeholder="+91 1234567890">
+      <h4>Date of birth<sup>*</sup></h4>
+      <input type="date" />
+      <h4>E-mail<sup>*</sup></h4>
+      <input type="email" name="email" /><br><br>
+      
+      <address>
+        Address<sup>*</sup>: <br>
+        <input type="text" name="street" placeholder="Street Address">
+        <input type="text" name="Street Line 2" placeholder="Street Line 2"><br><br>
+        <input type="text" name="City" placeholder="City">
+        <input type="text" name="State" placeholder="State"><br><br>
+        <input type="text" name="Postal Code" placeholder="Postal Code">
+        <input type="text" name="Country" placeholder="Country">
+
+
+      </address><br>
+      <strong>Aadhaar Card<sup>*</sup>: </strong><input type="number" name="religion"> <br><br>
+      <strong>Religion<sup>*</sup>: </strong><input type="text" name="religion"> 
+      <strong>Caste<sup>*</sup>: </strong><input type="text" name="caste">
+      <strong>SubCaste<sup>*</sup>:</strong> <input type="text" name="subcaste">
+      <h4>Nationality<sup>*</sup>:</h4>
+      <input type="text" name="nationality">
+      <h4>Parent/Guardian's Name<sup>*</sup>:</h4>
+      <input type="text" name="Firstname" placeholder="Firstname" />
+      <input type="text" name="Middle" placeholder="Middle" />
+      <input type="text" name="Lastname" placeholder="Lastname" />
+      <h4>Parent / Guardian's Occupation<sup>*</sup>:</h4>
+      <input type="text" name="Parent / Guardian's Occupation" />
+      <h4>Parent's Mobile Number<sup>*</sup>:</h4>
+      <input type="tel" name="mobile" placeholder="+91 1234567890"><br>
+      <h4>Marks:</h4>
+    <table border="1" cellspacing="2" cellpadding="10">
+      <tr >
+        <th>Std</th>
+        <th>Year</th>
+        <th>Percentage</th>
+      </tr>
+      <tr>
+        <td>10th<sup>*</sup></td>
+        <td ><input type="number"></td>
+        <td ><input type="number"></td>
+      </tr>
+      <tr>
+        <td>12th</td>
+        <td ><input type="number"></td>
+        <td ><input type="number"></td>
+      </tr>
+      <tr>
+        <td>Diploma</td>
+        <td ><input type="number"></td>
+        <td ><input type="number"></td>
+      </tr>
+    </table><br>
+    <input type="checkbox" name="t&c"> I agree to the terms & Condition <br><br>
+    <input type="submit" name="submit"> 
+    <input type="reset">
+    </form>
+  </body>
+</html>
