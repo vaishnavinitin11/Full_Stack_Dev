@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking | Tourism Site</title>
+  </head>
+  <body style="background-color: rgb(231, 125, 3)">
+    <figure style="display: flex; align-items: center">
+      <img src="logo.png" alt="logo" height="300" style="float: left" />
+      <figcaption style="font-size: 130px">Mumbai Tourism</figcaption>
+    </figure>
+    <h1>Hotel Booking Form</h1>
+    <form action="index.html">
+      <fieldset style="color: black">
+        <legend>
+          <label for="">Guest Information</label>
+        </legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" id="fullname" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+        <br>
+        <label for="phone">Contact: </label>
+        <input type="tel" name="phone" id="phone" maxlength="10" required>
+        <br>
+        <br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" cols="30" rows="3" required></textarea>
+        <br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state">
+        <label for="zip">Zip:</label>
+        <input type="text" name="zip" id="zip" required>
+
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Reservation Details:</legend>
+        <label for="checkindate">Check-in Date:</label>
+        <input type="date" name="checkindate" placeholder="DD/MM/YYYY" required>
+        <br>
+        <label for="checkoutdate">Check-out Date:</label>
+        <input type="date" name="checkoutdate" placeholder="DD/MM/YYYY" required>
+        <br>
+        <label for="noofrooms">Number of Rooms:</label>
+        <input type="number" name="noofrooms" id="noofrooms" required>
+        <br>
+        <label for="roomtype">Room Type:</label>
+        <select name="roomtype" id="roomtype" >
+            <option value="">--Please select a room type--</option>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+        </select>
+        <br>
+        <label for="specialreq">Special Requests:</label>
+        <textarea name="specialreq" id="specialreq" cols="30" rows="3" placeholder="Mention Special Request if any"></textarea>
+      </fieldset>
+
+      <br>
+      
+      <fieldset>
+        <legend>Payment Information:</legend>
+        <label for="paymethod">Payment Method:</label>
+        <select name="paymethod" id="paymethod">
+            <option value="">--Select Payment Method--</option>
+            <option value="Cash">Cash</option>
+            <option value="Credit Card/Debit Card">Credit Card/Debit Card</option>
+            <option value="UPI">UPI</option>
+        </select>
+        <br>
+        <label for="ccnum">Credit Card Number:</label>
+        <input type="tel" name="ccnum" id="ccnum" maxlength="16" required>
+        <br>
+        <label for="expdate">Expiry Date:</label>
+        <input type="date" name="expdate" id="expdate" required>
+        <label for="cvv">CVV:</label>
+        <input type="tel" name="cvv" id="cvv" maxlength="3" required>
+        <br>
+        <label for="address">Billing Address:</label>
+        <textarea name="billaddress" id="billaddress" cols="30" rows="3" required></textarea>
+
+      </fieldset>
+<br>
+      <fieldset>
+        <legend>
+            Additional Services
+        </legend>
+        <label for="airportshuttle">Airport Shuttle</label>
+        <select name="airportshuttle" id="airportshuttle">
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <label for="carrental">Car Rental:</label>
+        <select name="carrental" id="carrental">
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <label for="spa">Spa Services:</label>
+        <select name="spa" id="spa">
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <label for="roomservice">Room Service:</label>
+        <select name="roomservice" id="roomservice">
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+      </fieldset>
+      <br>
+      <label for="tc">Terms and Conditions:</label >
+        <br>
+      <input type="checkbox" name="tc" id="tc">
+      I have read and agree to the hotel's policies regarding cancellations, refunds, and other important information.
+      <br><br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
